@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Younchan Hwang</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base/style.css">
+    <link rel="stylesheet" href="styles/components/animations.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.159.0/build/three.module.js"
+            }
+        }
+    </script>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <nav class="sidebar">
+            <div class="logo">
+                <h2>黄阭粲</h2> 
+            </div>
+            
+            <div class="nav-section">
+                <a href="about.html">About</a>
+                <a href="project.html">Project</a>
+                <a href="archive.html">Archive</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+        <main>
+            <div class="content">
+                <div class="header-row">     
+                    <div class="header">
+                        <div class = "header-name">
+                            <h1>Younchan Hwang</h1>
+                        </div>
+                        <div class="dynamic-txt-container">
+                            <ul class="dynamic-txt">
+                                <li><span>Developer</span></li>
+                                <li><span>Explorer</span></li>
+                                <li><span>Athlete</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="model-container">
+                        <canvas id="ring"></canvas>
+                        <h2>Stanford BS CS</h2>
+                    </div>
+    
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="scripts/animations.js"></script>
+    <script type="module" src="/model.js"></script>
+</body>
+</html>

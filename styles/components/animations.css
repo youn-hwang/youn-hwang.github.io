@@ -1,0 +1,72 @@
+:root {
+    /* Animation timing variables */
+    
+    --typing-duration: 2s;
+    --cursor-duration: 0.5s;
+    --font-size: 1.4rem;
+    --list-size: 3;
+    
+    /*slide-duration = typing-duration * 2 * list-size **/
+    --slide-duration: calc(2s * 2 * 3);
+    /*slide-distance=font-size*list-size*/
+    --slide-distance: calc(-1.4rem * 3);
+    
+    /* Colors */
+    --cursor-color: #000;
+    --background-color: white;
+}
+
+.dynamic-txt {
+    font-size: 1.5vw;
+    letter-spacing: 1px;
+    font-family: monospace;
+    color: #666;
+    letter-spacing: 1px;
+    overflow: hidden;
+    line-height: var(--font-size);
+    height: var(--font-size);
+    padding: 0;
+}
+
+.dynamic-txt-container {
+    display: inline-block;
+}
+
+.dynamic-txt li {
+    animation: slide var(--slide-duration) steps(var(--list-size)) infinite;
+    list-style: none;
+    font-size: var(--font-size);
+    position: relative;
+    top: 0;
+}
+
+@keyframes slide {
+    100% { top: var(--slide-distance) }
+}
+
+.dynamic-txt li span {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.dynamic-txt li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    background: var(--background-color);
+    height: 100%;
+    width: 100%;
+    border-left: 1px solid var(--cursor-color);
+}
+
+@keyframes cursor {
+    50% { border-color: transparent }
+}
+
+@keyframes typing {
+    0%, 15% { left: 0% }
+    70%, 100% { left: 99.5% }
+}
