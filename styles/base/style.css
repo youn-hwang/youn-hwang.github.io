@@ -26,6 +26,7 @@ body {
     
 }
 
+
 .header-name {
     align-content: center;
     display: block;
@@ -57,9 +58,12 @@ h2 {
     color: #666;
     text-decoration: none;
 }
+.major{
+    margin-bottom: 8px;
+}
 
 .wrapper {
-    max-width: 1200px;
+    max-width: 1500px;
     margin-left: auto; 
     margin-right: auto;
     padding-left: 20px;
@@ -108,7 +112,7 @@ h2 {
 }
 
 .header h1 {
-    font-size: 105px;
+    font-size: 8vw;
     color: transparent; /* Make the text color transparent */
     background: linear-gradient(90deg, #b6b6b6, #3c3c3c); /* Example gradient colors */
     background-clip: text; /* Clip the background to the text */
@@ -139,6 +143,7 @@ main {
     justify-content: center;
     width: auto;
     height: auto;
+    z-index: 10;
     /* background-color:red; */
 }
 
