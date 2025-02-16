@@ -63,7 +63,7 @@ h2 {
 }
 
 .wrapper {
-    max-width: 1500px;
+    max-width: min(1500px, 70%);
     margin-left: auto; 
     margin-right: auto;
     padding-left: 20px;
@@ -85,10 +85,12 @@ h2 {
 .content{
     margin-left: 5%;
     margin-right: 5%;
+    height: 100%;
+    margin-top: 5vh;
     display: flex;
     align-items: center;
-    flex-direction: column; /* Ensure content stacks vertically */
-    overflow: visible; /* Ensure overflow is visible */
+    flex-direction: column; 
+    overflow: visible; 
 }
 
 .content::before {
@@ -111,7 +113,7 @@ h2 {
     min-height: 100px; /* Adjust as needed */
 }
 
-.header h1 {
+h1 {
     font-size: 8vw;
     color: transparent; /* Make the text color transparent */
     background: linear-gradient(90deg, #b6b6b6, #3c3c3c); /* Example gradient colors */
@@ -187,4 +189,37 @@ canvas {
     h2 {
         font-size: 1.4rem;
     }
+}
+
+.projects {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.project {
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project h2 {
+    margin-top: 0;
+    text-align: left;
+}
+
+.project p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.project-header h1{
+    font-size: min(80px, 7vw);
 }
