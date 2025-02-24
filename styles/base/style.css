@@ -193,10 +193,10 @@ canvas {
 
 .projects {
     width: 100%;
-    margin-top: 40px;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin-bottom: 60px;
 }
 
 .project {
@@ -206,12 +206,10 @@ canvas {
     transition: transform 0.2s ease;
 }
 
-.project:hover {
-    transform: translateY(-5px);
-}
 
 .project h2 {
     margin-top: 0;
+    margin-bottom: 20px;
     text-align: left;
 }
 
@@ -221,5 +219,29 @@ canvas {
 }
 
 .project-header h1{
-    font-size: min(80px, 7vw);
+    font-size: min(80px, 4.5vw);
+}
+
+.project-content {
+    flex-direction: row;
+    display: flex;
+}
+.project-text {
+    flex-direction: column;
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+.project-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.project-media img {
+    max-height: 400px;
+    max-width: 300px;
+    width: auto;
+    height: auto;
 }

@@ -87,6 +87,11 @@
     opacity: 0;
     animation: slideUp 0.6s ease forwards;
 }
+.project:hover {
+    transform: translateY(-5px);
+}
+
+
 
 .project:nth-child(1) {
     animation-delay: 0.2s;
